@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'pwd'
+        sh 'docker buildx build -t php .'
       }
     }
 
